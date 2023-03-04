@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string-array name="choices">
+        <item>Select a robot</item>
+        <item>Select a human</item>
+    </string-array>
 </resources>
