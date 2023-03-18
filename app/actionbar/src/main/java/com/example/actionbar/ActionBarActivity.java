@@ -30,6 +30,11 @@ public class ActionBarActivity extends AppCompatActivity {
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -59,5 +64,8 @@ public class ActionBarActivity extends AppCompatActivity {
                 //User clicked OK button
             }
         });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }
