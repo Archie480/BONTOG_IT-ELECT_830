@@ -95,7 +95,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper{
         Cursor cursor = db.query(TABLE_NAME, projection, null, null, null, null, sortOrder);
         return  cursor;
     }
-
+    //DELETE
     public void deleteAllData()
     {
         SQLiteDatabase db = getReadableDatabase();
