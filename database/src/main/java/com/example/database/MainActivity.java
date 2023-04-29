@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Delete data
         dbHelper.deleteData(2);
+        getData();
 
         //Shared Preferences
         //Get the shared preferences object
