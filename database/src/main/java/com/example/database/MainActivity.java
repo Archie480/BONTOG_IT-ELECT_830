@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         //Get the shared preferences object
         SharedPreferences prefs = getSharedPreferences("my_prefs", MODE_PRIVATE);
 
-        //Save values to shared preferences
+        //Save values to shared preference
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("name", "John");
         editor.putInt("age", 26);
